@@ -99,5 +99,8 @@
       "<rootDir>/packages/*/node_modules/",
       "<rootDir>/packages/generator-cmsgov/generators/app/templates/"
     ]
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1"
   }
 }
