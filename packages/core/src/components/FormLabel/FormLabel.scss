@@ -64,11 +64,11 @@ Style guide: components.form-label.react
 
 #### Labels
 
-- Each form field should have a <label>. Never use a field's placeholder attribute as the primary way to label the field.
+- Each form field should have a `<label>`. Never use a field's `placeholder` attribute as the primary way to label the field.
 
 #### Legends
 
-- Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.
+- Use a single `legend` for `fieldset` (this is required). One example of a common use of `fieldset` and `legend` is a question with radio button options for answers. The question text and radio buttons are wrapped in a `fieldset`, with the question itself being inside the `legend` tag.
 
 ## Guidance
 
