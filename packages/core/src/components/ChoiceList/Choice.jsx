@@ -38,14 +38,18 @@ export const Choice = function(props) {
     id = uniqueId(`${inputProps.type}_${inputProps.name}_`);
   }
 
+  // TODO(sawyer): The wrapping <div> can be removed if React 15 support is dropped
   return (
-    <div className={className}>
-      <input
-        className={inputClasses}
-        id={id}
-        {...inputProps}
-      />
-      <label htmlFor={id}>{children}</label>
+    <div>
+      <div className={className}>
+        <input
+          className={inputClasses}
+          id={id}
+          {...inputProps}
+        />
+        <label htmlFor={id}>{children}</label>
+      </div>
+      {}
     </div>
   );
 };
@@ -66,7 +70,7 @@ Choice.propTypes = {
    */
   checked: PropTypes.bool,
   /**
-   * Additional classes to be added to the root `div` element.
+   * Additional classes to be added to the choice field's containing element.
    */
   className: PropTypes.string,
   /**
